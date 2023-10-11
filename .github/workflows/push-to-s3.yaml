@@ -22,5 +22,8 @@ jobs:
           aws-region: us-east-2
           role-to-assume: arn:aws:iam::114705477235:role/github-action-s3-role
 
+      - name: remove bucket contents
+        run: aws s3 rm s3://lvndlocked.com --recursive
+
       - name: deploy to s3
         run: aws s3 sync ./ s3://lvndlocked.com
