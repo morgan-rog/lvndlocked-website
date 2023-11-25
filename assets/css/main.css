@@ -3378,7 +3378,7 @@
 		height: 3.25em;
 		left: 0;
 		line-height: 3.25em;
-		position: fixed;
+		position: relative;
 		text-align: right;
 		top: 0;
 		width: 100%;
