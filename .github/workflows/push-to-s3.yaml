@@ -2,7 +2,7 @@ name: deploy to s3
 run-name: deploying to s3
 
 on:
-  workflow_dispatch:
+  push
 
 permissions:
   id-token: write
